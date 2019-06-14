@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">PDF Signer</string>
+
+    <string name="search_text">ID</string>
+    <string name="search_button">Search</string>
+
+    <string name="agreement">I agree with the terms and conditions.</string>
+    <string name="clear_pad">Clear pad</string>
+    <string name="save_signature">Save Signature</string>
+
+    <string name="settings_menu_label">Settings</string>
+
+    <string name="tab_config_text_1">Server</string>
+    <string name="tab_config_text_2">Signature</string>
+
+    <string name="config_server_text_server">Server</string>
+    <string name="config_server_text_username">Username</string>
+    <string name="config_server_text_password">Password</string>
+    <string name="config_server_text_domain">Domain</string>
+    <string name="config_server_text_share">Share</string>
+    <string name="config_server_button_save">Save</string>
+
+    <string name="config_signature_text_x_pos">X position</string>
+    <string name="config_signature_text_y_pos">Y position</string>
+    <string name="config_signature_text_width">Width</string>
+    <string name="config_signature_text_height">Height</string>
+    <string name="config_signature_text_page">Page</string>
+    <string name="config_signature_button_save">Save</string>
+
+    <string name="show_document_button_sign">Sign</string>
+    <string name="get_signature_button_sign">Save Signature</string>
+
+
+    <!--
+
+    <string name="app_name">Assinador</string>
+
+    <string name="search_text">NIF</string>
+    <string name="search_button">Procurar</string>
+
+    <string name="agreement">Concordo com os termos e condições.</string>
+    <string name="clear_pad">Limpar</string>
+    <string name="save_signature">Gravar Assinatura</string>
+
+    <string name="settings_menu_label">Definições</string>
+
+    <string name="tab_config_text_1">Servidor</string>
+    <string name="tab_config_text_2">Assinatura</string>
+
+    <string name="config_server_text_server">Server</string>
+    <string name="config_server_text_username">Username</string>
+    <string name="config_server_text_password">Password</string>
+    <string name="config_server_text_domain">Domain</string>
+    <string name="config_server_text_share">Share</string>
+    <string name="config_server_button_save">Gravar</string>
+
+    <string name="config_signature_text_x_pos">X position</string>
+    <string name="config_signature_text_y_pos">Y position</string>
+    <string name="config_signature_text_width">Width</string>
+    <string name="config_signature_text_height">Height</string>
+    <string name="config_signature_text_page">Page</string>
+    <string name="config_signature_button_save">Gravar</string>
+
+    <string name="show_document_button_sign">Assinar</string>
+    <string name="get_signature_button_sign">Gravar Assinatura</string>
+
+    -->
+
+</resources>
