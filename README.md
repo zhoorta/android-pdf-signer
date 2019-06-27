@@ -26,6 +26,12 @@ In the main activity the user inputs an ID. The app then searches for a file wit
 - [AndroidPdfViewer] (https://github.com/barteksc/AndroidPdfViewer) to display the pdf;
 - [android-signaturepad] https://github.com/gcacace/android-signaturepad) to capture the signature;
 
+## Screenshots
+
+![Search screen](screenshots/1.png) | ![PDF viewer](screenshots/2.png)
+![PDF signing](screenshots/3.png) | ![Resulting PDF](screenshots/4.png)
+![Server settings](screenshots/5.png) | ![Signature settings](screenshots/6.png)
+
 ## Todo
 
 - Add other type of file shares/cloud storage like Amazon S3
