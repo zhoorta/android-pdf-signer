@@ -1,5 +1,5 @@
 <resources>
-
+    <!--
     <string name="app_name">PDF Signer</string>
 
     <string name="search_text">ID</string>
@@ -19,6 +19,7 @@
     <string name="config_server_text_password">Password</string>
     <string name="config_server_text_domain">Domain</string>
     <string name="config_server_text_share">Share</string>
+    <string name="config_server_text_suffix">File Suffix</string>
     <string name="config_server_button_save">Save</string>
 
     <string name="config_signature_text_x_pos">X position</string>
@@ -32,11 +33,18 @@
     <string name="get_signature_button_sign">Save Signature</string>
 
 
-    <!--
+    <string name="show_final_document_button">Close</string>
+
+    <string name="error_title">Error</string>
+    <string name="error_not_found">Not found</string>
+
+    <string name="info_saving_document">Saving document...</string>
+    -->
+
 
     <string name="app_name">Assinador</string>
 
-    <string name="search_text">NIF</string>
+    <string name="search_text">Número</string>
     <string name="search_button">Procurar</string>
 
     <string name="agreement">Concordo com os termos e condições.</string>
@@ -53,6 +61,7 @@
     <string name="config_server_text_password">Password</string>
     <string name="config_server_text_domain">Domain</string>
     <string name="config_server_text_share">Share</string>
+    <string name="config_server_text_suffix">Sufixo ficheiro</string>
     <string name="config_server_button_save">Gravar</string>
 
     <string name="config_signature_text_x_pos">X position</string>
@@ -65,6 +74,11 @@
     <string name="show_document_button_sign">Assinar</string>
     <string name="get_signature_button_sign">Gravar Assinatura</string>
 
-    -->
+    <string name="show_final_document_button_finish">Fechar</string>
+
+    <string name="error_title">Erro</string>
+    <string name="error_not_found">O documento não foi encontrado</string>
+
+    <string name="info_saving_document">A gravar documento...</string>
 
 </resources>

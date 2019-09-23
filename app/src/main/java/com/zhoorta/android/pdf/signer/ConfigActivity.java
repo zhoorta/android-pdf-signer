@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.zhoorta.android.pdf.signer.ui.config.SectionsPagerAdapter;
 
+import java.util.Objects;
+
 public class ConfigActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +24,7 @@ public class ConfigActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        //Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 
     }

@@ -1,5 +1,6 @@
 package com.zhoorta.android.pdf.signer.ui.config;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -55,12 +56,14 @@ public class ServerConfigFragment extends Fragment {
         final EditText textPassword = root.findViewById(R.id.editPassword);
         final EditText textDomain = root.findViewById(R.id.editDomain);
         final EditText textShare = root.findViewById(R.id.editShare);
+        final EditText textSuffix = root.findViewById(R.id.editSuffix);
 
         textServer.setText(config.getString("server", null));
         textUsername.setText(config.getString("username", null));
         textPassword.setText(config.getString("password", null));
         textDomain.setText(config.getString("domain", null));
         textShare.setText(config.getString("share", null));
+        textSuffix.setText(config.getString("suffix", null));
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -70,6 +73,7 @@ public class ServerConfigFragment extends Fragment {
                 String password = textPassword.getText().toString();
                 String domain = textDomain.getText().toString();
                 String share = textShare.getText().toString();
+                String suffix = textSuffix.getText().toString();
 
 
                 SharedPreferences.Editor editor = config.edit();
@@ -78,11 +82,12 @@ public class ServerConfigFragment extends Fragment {
                 editor.putString("password", password);
                 editor.putString("domain", domain);
                 editor.putString("share", share);
+                editor.putString("suffix", suffix);
                 editor.commit();
 
                 Intent returnIntent = new Intent();
-                //setResult(Activity.RESULT_OK,returnIntent);
-                //finish();
+                getActivity().setResult(Activity.RESULT_OK,returnIntent);
+                getActivity().finish();
 
 
             }

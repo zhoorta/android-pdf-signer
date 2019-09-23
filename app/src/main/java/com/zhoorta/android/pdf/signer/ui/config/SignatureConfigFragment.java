@@ -1,6 +1,8 @@
 package com.zhoorta.android.pdf.signer.ui.config;
 
+import android.app.Activity;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -69,10 +71,9 @@ public class SignatureConfigFragment extends Fragment {
                 editor.putString("page", textPage.getText().toString());
                 editor.commit();
 
-                //Intent returnIntent = new Intent();
-                //setResult(Activity.RESULT_OK,returnIntent);
+                Intent returnIntent = new Intent();
+                getActivity().setResult(Activity.RESULT_OK,returnIntent);
                 getActivity().finish();
-
 
             }
         });

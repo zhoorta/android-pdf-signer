@@ -1,5 +1,6 @@
 package com.zhoorta.android.pdf.signer;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -80,7 +81,7 @@ public class GetSignatureActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                alert("Saving document ...");
+                alert(getResources().getString(R.string.info_saving_document));
 
                 new SMBServerConnect(new SMBServerConnect.AsyncResponse(){
                     @Override
@@ -108,16 +109,24 @@ public class GetSignatureActivity extends AppCompatActivity {
                             new SMBCopyLocalFile(smb, GetSignatureActivity.this.config.getString("outboundPath", "out") + "\\" + getIntent().getExtras().getString("source"), new SMBCopyLocalFile.AsyncResponse() {
                                 @Override
                                 public void processFinish(boolean success, String error) {
-                                    Log.e("SMBCopyLocalFile","SMBCopyLocalFile");
-                                    Log.e("SMBCopyLocalFile",error);
 
-                                    tmpLocalFile.delete();
+                                    //tmpLocalFile.delete();
                                     outputSignature.delete();
 
                                     new SMBDeleteRemoteFile(smb, new SMBDeleteRemoteFile.AsyncResponse() {
                                         @Override
                                         public void processFinish(boolean success, String error) {
+
+
+                                            smb.close();
+
                                             finish();
+
+                                            Intent intent = new Intent(GetSignatureActivity.this, ShowFinalDocumentActivity.class);
+                                            intent.putExtra("file", tmpLocalFile.getAbsolutePath());
+
+                                            startActivity(intent);
+
                                         }
                                     }).execute(GetSignatureActivity.this.config.getString("inboundPath", "in") + "\\" + getIntent().getExtras().getString("source"));
 

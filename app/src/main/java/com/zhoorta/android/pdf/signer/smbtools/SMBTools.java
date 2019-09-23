@@ -34,6 +34,10 @@ public class SMBTools {
         this.context = context;
     }
 
+    public void close() {
+        this.client.close();
+    }
+
     public Session connect(String hostname,String username,String password,String domain) throws IOException {
 
         try {
