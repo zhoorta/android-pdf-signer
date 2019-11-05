@@ -1,5 +1,5 @@
 <resources>
-    <!--
+
     <string name="app_name">PDF Signer</string>
 
     <string name="search_text">ID</string>
@@ -31,16 +31,15 @@
 
     <string name="show_document_button_sign">Sign</string>
     <string name="get_signature_button_sign">Save Signature</string>
-
-
-    <string name="show_final_document_button">Close</string>
+    
+    <string name="show_final_document_button_finish">Close</string>
 
     <string name="error_title">Error</string>
     <string name="error_not_found">Not found</string>
 
-    <string name="info_saving_document">Saving document...</string>
-    -->
+    <string name="info_saving_document">Saving document</string>
 
+    <!--
 
     <string name="app_name">Assinador</string>
 
@@ -80,5 +79,5 @@
     <string name="error_not_found">O documento não foi encontrado</string>
 
     <string name="info_saving_document">A gravar documento...</string>
-
+    -->
 </resources>
